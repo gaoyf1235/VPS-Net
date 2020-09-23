@@ -1,5 +1,6 @@
 numpy
-torch>=1.0
+torch==1.0.1
+cudatoolkit==9.0
 torchvision
 tqdm
 shapely

@@ -38,7 +38,7 @@ if __name__ == "__main__":
 
     os.makedirs(opt.output_folder, exist_ok=True)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
+    print('Using device:', device)
     ps_detect =PsDetect(opt.model_def, opt.weights_path_yolo, opt.img_size, device)
     vps_classify = vpsClassify(opt.weights_path_vps, device)
 
